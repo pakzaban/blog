@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Read</title>
+
+    <%- include("partials/header.ejs")%>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link px-2 text-white">Read</a></li>
+                <li><a href="/write" class="nav-link px-2 my_nav_link">Write</a></li>
+                <li><a href="/edit" class="nav-link px-2 my_nav_link">Edit</a></li>
+                <li><a href="/delete" class="nav-link px-2 my_nav_link">Delete</a></li>
+            </ul>
+
+            <h1>the blog</h1>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="container" class="container text-left">
+        <div class="row">
+            <div id="left_column" class="col">
+                <ul>
+                    <% for (const key in dic) { %>
+                        <li>
+                            <a href="#" onclick="readArticle('<%= key %>'); return false;"><%= key %></a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div id="right_column" class="col">
+                <% if (content) { %>
+                    <p id="content">
+                        <pre class="blog_font"><%= content %></pre>
+                    </p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include("partials/footer.ejs")%>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

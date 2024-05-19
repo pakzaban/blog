@@ -1,0 +1,106 @@
+body{
+    background-color: floralwhite;
+}
+
+h1{
+    color:rgb(254, 219, 175);
+}
+a{
+    color: gray;
+}
+li{
+    color: rgb(254, 219, 175);
+}
+
+a:hover{
+    color: rgb(77, 67, 67);
+}
+
+a:active {
+    color: floralwhite;
+}
+
+.my_nav_link{
+    color:rgb(232, 80, 25);
+}
+.my_nav_link:hover{
+    color: rgb(141, 19, 19);
+}
+
+#container {
+    margin: 1rem  auto;
+}
+#left_column{
+    padding: 2rem 0;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#right_column{
+    padding: 2rem;
+    margin: 5px;
+    background-color:rgb(255, 252, 246);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.blog_font {
+    font-family: "Zilla Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.write-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.write-container input[type="text"]{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.write-container textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.write-container input[type="submit"] {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.write-container input[type="submit"]:active {
+    background-color: floralwhite;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#footer_p{
+    text-align: center;
+    color: gray;
+}
