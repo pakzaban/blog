@@ -20,13 +20,25 @@
     <div id="container" class="container text-left">
         <div class="row">
             <div id="left_column" class="col">
-                <ul>
+                <!-- <ul>
                     <% for (const key in dic) { %>
                         <li>
                             <a href="#" onclick="readArticle('<%= key %>'); return false;"><%= key %></a>
+                            <input type="button" onclick="readArticle('<%= key %>')";
                         </li>
                     <% } %>
+                </ul> -->
+                <ul>
+                    <% for (const key in dic) { %>
+                    <li>
+                        <form action="/read" method="POST">
+                            <input type="hidden" name="title" value="<%=key%>">
+                            <input type="submit" value="<%=key%>" class="text_button">
+                        </form>
+                    </li>
+                    <%}%>
                 </ul>
+            
             </div>
             <div id="right_column" class="col">
                 <% if (content) { %>

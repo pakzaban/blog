@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 const blogDic = {
     "Sample Post 1" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat lacinia vulputate. Maecenas in ornare arcu, ac condimentum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque mi at pellentesque efficitur. Fusce justo nulla, dignissim sit amet nunc in, bibendum varius elit.",
@@ -42,6 +42,7 @@ app.post("/read", (req, res) => {
     selected = title
     console.log(selected);
 })
+
 
 app.post("/submit", (req, res) => {
     var title = req.body.post_title;
