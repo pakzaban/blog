@@ -5,19 +5,9 @@ body{
 h1{
     color:rgb(254, 219, 175);
 }
-a{
-    color: gray;
-}
+
 li{
     color: rgb(254, 219, 175);
-}
-
-a:hover{
-    color: rgb(77, 67, 67);
-}
-
-a:active {
-    color: floralwhite;
 }
 
 .text_button{
@@ -108,13 +98,6 @@ a:active {
 
 .write-container input[type="submit"]:active {
     background-color: floralwhite;
-    /* color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1rem; */
 }
 
 #footer_p{
